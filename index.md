@@ -50,7 +50,7 @@ void loop() {
 
 }
 ```
-
+---> 
 # Bill of Materials
 Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
 Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
@@ -58,13 +58,28 @@ Don't forget to place the link of where to buy each component inside the quotati
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
 | Elegoo Electronics Fun Kit | Contains various electronic components as well as a breadboard| $9.99 | <a href="https://www.amazon.com/EL-CK-002-Electronic-Breadboard-Capacitor-Potentiometer/dp/B01ERP6WL4/ref=asc_df_B01ERP6WL4/?tag=hyprod-20&linkCode=df0&hvadid=693615855514&hvpos=&hvnetw=g&hvrand=9959102661946103538&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9052344&hvtargid=pla-562895947159&mcid=9cae1398299332c592e9e59d7108c20c&gad_source=1&th=1"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> | 
+
+| Energizer AA Batteries(4 used) | Were used to power motors | $14.99 | <a href="https://www.amazon.com/dp/B07TXNX6S2?maas=maas_adg_53DCFBEA673C1C0C7351881105D732BE_afap_abs&ref_=aa_maas&tag=maas&gad_source=1&gclid=CjwKCAjw1emzBhB8EiwAHwZZxZpMZYsEWIWfRSGnGvtqCww3F0k5mB03BIMeWqSbuTqQHCXBoDtkihoCsosQAvD_BwE&gclsrc=aw.ds&th=1"> Link </a> |
+
+| Sixthgu Portable Power Bank (1 used)| Used to power Rasperberry Pi | $15.99 | <a href="https://www.amazon.com/SIXTHGU-Portable-Charger-Charging-Flashlight/dp/B0C7PHKKNK/ref=asc_df_B0C7PHKKNK/?tag=hyprod-20&linkCode=df0&hvadid=693712892611&hvpos=&hvnetw=g&hvrand=16665950822110873731&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9052344&hvtargid=pla-2204160034749&mcid=fa87eab63bd530549bbb5781886dab89&gad_source=1&th=1"> Link </a> |
+
+| 32 in 1 Screwdriver Set | Used to build robot car chassis | $6.99 | <a href="https://www.amazon.com/Small-Screwdriver-Set-Mini-Magnetic/dp/B08RYXKJW9"> Link </a> |
+
+| TT Gearbox Motor(2 used) | Used to make wheels on robot move | $10.99 | <a href="https://www.amazon.com/AEDIKO-Motor-Gearbox-200RPM-Ratio/dp/B09N6NXP4H/ref=asc_df_B09N6NXP4H/?tag=hyprod-20&linkCode=df0&hvadid=693399102390&hvpos=&hvnetw=g&hvrand=5299691174750967451&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9052344&hvtargid=pla-1637610743750&psc=1&mcid=bbadcc677add36f692ca69802ba37513&gad_source=1"> Link </a> |
+
+| Emozny Robot Car Chassis Kit | Acts as the base for the ball tracking robot | $12.99 | <a href="https://www.amazon.com/Smart-Chassis-Motors-Encoder-Battery/dp/B01LXY7CM3/ref=asc_df_B01LXY7CM3/?tag=hyprod-20&linkCode=df0&hvadid=693448563566&hvpos=&hvnetw=g&hvrand=3650067821143406173&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9052344&hvtargid=pla-584495246069&psc=1&mcid=3f54405bf4d93ae384d78ef10f75b962&gad_source=1"> Link </a> |
+
+| AstroAI Multimeter Tester | Measures voltage and ohms| $12.99 | <a href="https://www.amazon.com/AstroAI-Digital-Multimeter-Voltage-Tester/dp/B01ISAMUA6/ref=asc_df_B01ISAMUA6/?tag=hyprod-20&linkCode=df0&hvadid=693070740235&hvpos=&hvnetw=g&hvrand=14579879261594192980&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9052344&hvtargid=pla-379007186802&psc=1&mcid=e995faa2fd8a33b8811e7e950fb100e9&gad_source=1"> Link </a> |
+
+| Raspberry Pi Camera Module | When connected to the Raspberry Pi, it is able to take photos and videos | $17.99 | <a href="https://www.amazon.com/Raspberry-Pi-Camera-Module-Megapixel/dp/B01ER2SKFS/ref=asc_df_B01ER2SKFS/?tag=hyprod-20&linkCode=df0&hvadid=693442483832&hvpos=&hvnetw=g&hvrand=12253194615247897850&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9052344&hvtargid=pla-406302832745&mcid=946fcdccb9973acc91f2c08c4c6490a9&gad_source=1&th=1"> Link </a> | 
+
+| DC Moter Drive Controller Board(1 used) | Used to control moters | $5.50 | <a href="https://www.amazon.com/HiLetgo-H-bridge-Stepper-Controller-Arduino/dp/B00M0F243E/ref=sr_1_1?dib=eyJ2IjoiMSJ9.K2SjOJTkN5F85Zns_dU3YdjbUosjZIECiWiT2TWhi6hjwuuV0CxeHZQ5pN-1bhiA_NQpkxBlWe1YXbMRVKFSQYxOfmrTcQZvdeE5qXWKyTCTpuoUnjyj0Qt7WSxweMdrLOBgBzlwd4oqgdLiIEaDfFa5JhOoGGnn0KAMiSeHlxnmUSN14fmuKtWg7m3Y0qOXq0UUBlIAtwAKhiyJUqklXNEpxUoBix0yxv_KX-hqOQwb79PJ4x2iZ1tQh_BcJ8__ZxoFHJ5SkzmkE93LZmvuLrT6BANZfZEPVjrmz4j669w.dXG6iLoc8wOiuas-2XvFY_SOZJeHVZGdFR85eOcEdUw&dib_tag=se&hvadid=409940659656&hvdev=c&hvlocphy=9052344&hvnetw=g&hvqmt=e&hvrand=15791150144840405235&hvtargid=kwd-300973309866&hydadcr=24656_11410731&keywords=l9110s+motor+driver&qid=1719375172&sr=8-1"> Link </a> | 
+
+| Ultrasonic Sensors with housing | Are able to detect how far away an object is | $9.49 | <a href="https://www.amazon.com/WWZMDiB-Ultrasonic-Sensor-Raspberry-HC-SR04/dp/B0C166NX3Z/ref=asc_df_B0C166NX3Z/?tag=hyprod-20&linkCode=df0&hvadid=693411594200&hvpos=&hvnetw=g&hvrand=15413222228880657023&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9052344&hvtargid=pla-2197607558769&psc=1&mcid=b102a4193abc323e86158bd5dd7608dd&gad_source=1"> Link </a> | 
+<!--
+| Larger breadboard| raspberr | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> | 
+| T Pi Cobbler | raspberr | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> | 
+| Arduino Cam | raspberr | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> | 
 
 # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
