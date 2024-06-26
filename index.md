@@ -21,14 +21,12 @@ In the end, my project is able to track a ball using image processing and is abl
 
 
 # Second Milestone
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/swTvoJJFWII?si=a95VOgHi7y5n98KX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 I have accomplished a lot since my last milestone. My last milestone was getting the robot’s motors to operate properly. Since then, I have also been able to program the ultrasonic sensors to detect how far an object is in front of it. When the project is complete, the sensors will be used to detect how far away the ball is and the motors will move the robot closer to the ball. My second milestone is being able to do image processing on an image taken by the Pi Camera. The main issue I faced during this milestone was because my Pi Camera stopped working. I had to complete all my code without having a camera to test it with immediately. When the new camera came, the code worked properly. This project surprised me because the code is a lot simpler than expected. My next step is to put all my code together, finish up my project, and add in a modification. 
 
 
 # First Milestone
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/u2Y0N68iUdk?si=f_fSw-ynnUQXgp3q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 The main parts of my project are the Raspberry Pi, the Pi camera, the motors, and the ultrasonic sensors. All of these components will be connected to the robot car chassis. The Raspberry Pi will be controlling the robot. So far, I have been able to assemble the car chassis, take images and videos from the Pi camera, and run the motors. I faced challenges when connecting the h bridge, the motors, and the Raspberry Pi. I solved this problem by researching on my own and found helpful websites to connect the components. I would like to connect my ultrasonic sensors and do image processing next.  
