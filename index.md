@@ -26,7 +26,7 @@ I have accomplished a lot since my last milestone. My last milestone was getting
 # First Milestone
 <iframe width="560" height="315" src="https://www.youtube.com/embed/u2Y0N68iUdk?si=f_fSw-ynnUQXgp3q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-The main parts of my project are the Raspberry Pi, the Pi camera, the motors, and the ultrasonic sensors. All of these components will be connected to the robot car chassis. The Raspberry Pi will be controlling the robot. So far, I have been able to assemble the car chassis, take images and videos from the Pi camera, and run the motors. I faced challenges when connecting the h bridge, the motors, and the Raspberry Pi. I solved this problem by researching on my own and found helpful websites to connect the components. I would like to connect my ultrasonic sensors and do image processing next.  
+The main parts of my project are the Raspberry Pi, the Pi camera, the motors, and the ultrasonic sensors. All of these components will be connected to the robot car chassis. The Raspberry Pi will be controlling the robot. So far, I have been able to assemble the car chassis, take images and videos from the Pi camera, and run the motors. I faced challenges when connecting the H bridge, the motors, and the Raspberry Pi. I solved this problem by researching on my own and found helpful websites to connect the components. I would like to connect my ultrasonic sensors and do image processing next.  
 
  
 # Schematics 
