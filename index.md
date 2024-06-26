@@ -1,17 +1,15 @@
 # Ball Tracking Robot 
 <!--- 
 Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
- 
-<!--- This is an HTML comment in Markdown -->
- 
+ --->
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Drisha M | STEM High School | **Electrical Engineering** | Incoming Freshman
+| Drisha M | STEM High School | Electrical Engineering | Incoming Freshman
 
 <!---**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**--> 
-<!---
-![Headstone Image](logo.svg)
-  
+
+
+  <!---
 # Final Milestone
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -30,10 +28,10 @@ I have accomplished a lot since my last milestone. My last milestone was getting
 
 The main parts of my project are the Raspberry Pi, the Pi camera, the motors, and the ultrasonic sensors. All of these components will be connected to the robot car chassis. The Raspberry Pi will be controlling the robot. So far, I have been able to assemble the car chassis, take images and videos from the Pi camera, and run the motors. I faced challenges when connecting the h bridge, the motors, and the Raspberry Pi. I solved this problem by researching on my own and found helpful websites to connect the components. I would like to connect my ultrasonic sensors and do image processing next.  
 
-<!---  
+ 
 # Schematics 
-Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
-
+![Schematics](BlueStampSchematicsFINAL.jpg)
+<!--- 
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
@@ -42,8 +40,6 @@ Here's where you'll put your code. The syntax below places it into a block of co
 ```
 ---> 
 # Bill of Materials
-Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
-Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
@@ -57,16 +53,12 @@ Don't forget to place the link of where to buy each component inside the quotati
 | Raspberry Pi Camera Module | When connected to the Raspberry Pi, it is able to take photos and videos | $17.99 | <a href="https://www.amazon.com/Raspberry-Pi-Camera-Module-Megapixel/dp/B01ER2SKFS/ref=asc_df_B01ER2SKFS/?tag=hyprod-20&linkCode=df0&hvadid=693442483832&hvpos=&hvnetw=g&hvrand=12253194615247897850&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9052344&hvtargid=pla-406302832745&mcid=946fcdccb9973acc91f2c08c4c6490a9&gad_source=1&th=1"> Link </a> | 
 | DC Moter Drive Controller Board(1 used) | Used to control moters | $5.50 | <a href="https://www.amazon.com/HiLetgo-H-bridge-Stepper-Controller-Arduino/dp/B00M0F243E/ref=sr_1_1?dib=eyJ2IjoiMSJ9.K2SjOJTkN5F85Zns_dU3YdjbUosjZIECiWiT2TWhi6hjwuuV0CxeHZQ5pN-1bhiA_NQpkxBlWe1YXbMRVKFSQYxOfmrTcQZvdeE5qXWKyTCTpuoUnjyj0Qt7WSxweMdrLOBgBzlwd4oqgdLiIEaDfFa5JhOoGGnn0KAMiSeHlxnmUSN14fmuKtWg7m3Y0qOXq0UUBlIAtwAKhiyJUqklXNEpxUoBix0yxv_KX-hqOQwb79PJ4x2iZ1tQh_BcJ8__ZxoFHJ5SkzmkE93LZmvuLrT6BANZfZEPVjrmz4j669w.dXG6iLoc8wOiuas-2XvFY_SOZJeHVZGdFR85eOcEdUw&dib_tag=se&hvadid=409940659656&hvdev=c&hvlocphy=9052344&hvnetw=g&hvqmt=e&hvrand=15791150144840405235&hvtargid=kwd-300973309866&hydadcr=24656_11410731&keywords=l9110s+motor+driver&qid=1719375172&sr=8-1"> Link </a> | 
 | Ultrasonic Sensors with housing | Are able to detect how far away an object is | $9.49 | <a href="https://www.amazon.com/WWZMDiB-Ultrasonic-Sensor-Raspberry-HC-SR04/dp/B0C166NX3Z/ref=asc_df_B0C166NX3Z/?tag=hyprod-20&linkCode=df0&hvadid=693411594200&hvpos=&hvnetw=g&hvrand=15413222228880657023&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9052344&hvtargid=pla-2197607558769&psc=1&mcid=b102a4193abc323e86158bd5dd7608dd&gad_source=1"> Link </a> | 
-<!--
-| Larger breadboard| raspberr | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> | 
-| T Pi Cobbler | raspberr | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> | 
-| Arduino Cam | raspberr | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> | 
-
+| Larger breadboard(Modification) | Allows for more space for circuit wiring | $10.99 | <a href="https://www.amazon.com/830-Point-Solderless-Breadboard-Prototyping-Classroom/dp/B00B88630E/ref=sr_1_10?dib=eyJ2IjoiMSJ9.EDMNBYDSTjBv81G_g5_5U_5k7thC8K3WqEMostOvqDtsL6HmGhG8z0SyqJYdkjcnEznc8yZ5mrX9TgXTvEUCAuFkUNutt-n69IZd-cyvYCdw_UuWXqvuLPYjZy2324fgHFlKOVV4MbaxQOE_-Got2OXs7YZLQlB6Igpv2pAPli5oMJfrKxitEAkRaiJwrYMIyN3H6DvoSoa9R7lkXOHPCETjLd6bXe1vhdK_s3b54Cw.dNW1OA31YAmy5r_w-yW9R2hRAakgofdFBTPAMHK_fC4&dib_tag=se&hvadid=570570157661&hvdev=c&hvlocphy=9028763&hvnetw=g&hvqmt=e&hvrand=11015565406265513908&hvtargid=kwd-478051304141&hydadcr=13934_13379011&keywords=breadboards+amazon&qid=1719442731&sr=8-10"> Link </a> | 
+| Pi T-Cobbler(Modification) | Allows connection between the breadboard and Raspberry Pi. Results in cleaner and easier to manage wiring | $Price | <a href="https://www.amazon.com/Adafruit-2028-Assembled-T-Cobbler-Plus/dp/B00OG4X0DK/ref=sr_1_fkmr0_1?crid=D4E29ACAL53G&dib=eyJ2IjoiMSJ9.rtXqZ75RlcNotNKyBTiETkWNTLrawhtoJT4PBjxXk0Q.cY_30jhShUVgshTU0pk0GBxz4sBP75DXORZGsyZ73Gk&dib_tag=se&keywords=t+pi+cobbler+with+5v+and+3v3&qid=1719442800&sprefix=t+pi+cobbler+with+5v+and+3v3%2Caps%2C102&sr=8-1-fkmr0"> Link </a> | 
+| Arducam(Replacemnt) | When connected to the Raspberry Pi, it is able to take photos and videos | $6.99 | <a href="https://www.amazon.com/Arducam-Megapixels-Sensor-OV5647-Raspberry/dp/B012V1HEP4/ref=asc_df_B012V1HEP4/?tag=hyprod-20&linkCode=df0&hvadid=693620629591&hvpos=&hvnetw=g&hvrand=7199533373023029001&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9028763&hvtargid=pla-820020083673&mcid=75fa5b0480f739c29fa68a28d965eee9&gad_source=1&th=1"> Link </a> | 
+<!---
 # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
 - [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
 - [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
 - [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
-
-To watch the BSE tutorial on how to create a portfolio, click here.
--->  
