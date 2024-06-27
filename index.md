@@ -1,7 +1,7 @@
 # Ball Tracking Robot 
-<!--- 
-Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
- --->
+ 
+The ball tracking robot that I have built uses image processing, which is done by a Pi cam and ultrasonic sensors, to control motors on a robot. The robot is then able to track a ball of a specific color and moves towards it. In the course of completing this project, I was able to overcome many difficult issues such as having to rewire all my ultraasonic sensors and learned important lessons such as the importance of good communication skills.
+ 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Drisha M | STEM High School | Electrical Engineering | Incoming Freshman
@@ -31,14 +31,174 @@ The main parts of my project are the Raspberry Pi, the Pi camera, the motors, an
  
 # Schematics 
 ![Schematics](BlueStampSchematicsFINAL.jpg)
-<!--- 
+
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
 ```
+from picamera2.encoders import H264Encoder
+from picamera2 import Picamera2
+import time
+import cv2 
+import numpy as np
+from gpiozero import Motor
+from gpiozero import DistanceSensor
+import RPi.GPIO as GPIO 
 
+#Ultrasonic Sensors
+def distanceSensors(): 
+    ultrasonic1 = DistanceSensor(echo=17, trigger=4, threshold_distance=0.5)
+    ultrasonic2 = DistanceSensor(echo=6, trigger=5, threshold_distance=0.5)
+    ultrasonic3 = DistanceSensor(echo=12, trigger=16, threshold_distance=0.5)
+
+    return ultrasonic1.distance*100, ultrasonic2.distance*100, ultrasonic3.distance*100 
+#Motors
+motor1 = Motor(21, 20)
+motor2 = Motor(15, 14)
+
+def forward():
+    motor1.forward()
+    motor2.forward()
+def backward():
+    motor1.backward()
+    motor2.backward()
+def left():
+    motor1.stop()
+    motor2.forward()
+def right():
+    motor1.forward()
+    motor2.stop()
+def sharpLeft():
+    motor1.backward()
+    motor2.forward()
+def sharpRight():
+    motor1.forward()
+    motor2.backward()
+def stop():
+    motor1.stop()
+    motor2.stop()
+    
+def find_blob(blob):  
+    largest_contour=0
+    cont_index=0
+    contours, hierarchy = cv2.findContours(blob, cv2.RETR_CCOMP, cv2.CHAIN_APPROX_SIMPLE)
+    for idx, contour in enumerate(contours):
+        area=cv2.contourArea(contour)
+        if (area >largest_contour) :
+            largest_contour=area
+            cont_index=idx                    
+    r=(0,0,2,2)
+    if len(contours) > 0:
+        r = cv2.boundingRect(contours[cont_index])
+    return r,largest_contour
+
+#LED Modifciation   
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+GPIO.setup(23, GPIO.OUT)
+GPIO.setup(18, GPIO.OUT)
+GPIO.output(23, GPIO.LOW)
+GPIO.output(18, GPIO.LOW)
+
+def led_green():
+    GPIO.output(23, GPIO.HIGH)
+    GPIO.output(18, GPIO.LOW)
+
+def led_red():
+    GPIO.output(23, GPIO.LOW)
+    GPIO.output(18, GPIO.HIGH)
+    
+global center_x
+global center_y
+global found
+global largeNumberArea
+global smallNumberArea
+global lowerRange
+global upperRange 
+center_x=0
+center_y=0
+found = 0
+largeNumberArea = 250000
+smallNumberArea = 100000
+leftRange = 400
+rightRange = 1520
+
+picam2 = Picamera2()
+video_config = picam2.create_video_configuration(main={"size": (1920, 1080)}, lores={"size": (480, 270)}, display="lores")
+picam2.configure(video_config)
+encoder = H264Encoder(bitrate=10000000)
+output = "myVideo.h264"
+picam2.start_recording(encoder, output)
+
+while True:	
+    im = picam2.capture_array()
+    cv2.imwrite('ballImage.png', im)
+    found = 1
+    leftSensorFlag = 0
+    middleSensorFlag = 0
+    rightSensorFlag = 0 
+    if found == 1:
+        #Call ultrasonic sensors
+        leftSensor, middleSensor, rightSensor = distanceSensors()
+        print("Sensor 1: ", leftSensor)
+        print("Sensor 2: ", middleSensor)
+        print("Sensor 3: ", rightSensor)
+        if (leftSensor > 5 and leftSensor < 100):
+            leftSensorFlag = 1
+        if (middleSensor > 5 and middleSensor < 100):
+            middleSensorFlag = 1
+        if (rightSensor > 5 and rightSensor < 100):
+            rightSensorFlag = 1
+        if (leftSensorFlag == 1 or middleSensorFlag == 1 or rightSensorFlag == 1):
+            sensorFlag = 1
+            print("SensorFlag:",  sensorFlag)
+        #Find the masked image 
+        frame = im[:,:,[0,1,2]] 
+        hsv_img = cv2.cvtColor(frame, cv2.COLOR_RGB2HSV)
+        mask_1 = cv2.inRange(hsv_img, np.array([155,190,1]), np.array([190,255,255]))
+        cv2.imwrite('mask1img.png', mask_1)
+        mask = mask_1
+        cv2.imwrite('maskimg.png', mask)
+        kern_dilate = np.ones((4,4), np.uint8)
+        kern_erode  = np.ones((4,4), np.uint8)
+        mask= cv2.erode(mask,kern_erode)
+        mask=cv2.dilate(mask,kern_dilate)
+        (h,w) = mask.shape
+        #cv2.imshow('maskimg.png', mask)
+        #Find the area 
+        positions, area = find_blob(mask)
+        print(area)
+        x,y,w,h = positions
+        #print(x)
+        center_x  =x + w/2
+        center_y  =y + h/2
+
+        if (area < largeNumberArea and area > smallNumberArea and sensorFlag == 1):
+            #Green light on
+            led_green()
+            #reset found value
+            print ("Found:", found)
+            found = 0
+            print("center X" ,center_x)
+            if center_x > 0 and center_x < leftRange:
+                print("centerLeft X" ,center_x)
+                sharpLeft()
+                
+            elif center_x < 1920 and center_x > rightRange:
+                print("centerRight X" ,center_x)
+                sharpRight()
+            else: 
+                print("centerForward X" ,center_x)
+                forward()
+        else:
+            stop()
+            #Red light on
+            led_red()
+            found = 0 
+        continue 
+picam2.stop_recording()
 ```
----> 
+
 # Bill of Materials
 
 | **Part** | **Note** | **Price** | **Link** |
