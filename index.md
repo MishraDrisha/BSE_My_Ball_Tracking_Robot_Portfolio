@@ -10,6 +10,7 @@ The ball tracking robot uses image processing, which is done by a Pi cam and ult
 --> 
 # Final Milestone
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HpitgQfbUqg?si=x5LJbQNo_byRSDeX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 My final milestone was to finish up my project and add in a modification. I put all of my code for my motors, sensors, and camera into one file and added code to allow the robot to move based on where the ball was. For my modification, I added 2 LED lights. The green light turns on when the ball is detected and the red light turns on when the ball is not detected. My two main accomplishments during BlueStamp were understanding new code, and completing the project by myself with minimal help. 2 challenges I faced were meeting deadlines for the project, and making my final file of code work fully. The main things that I learned in the course of making this project are some basics of Raspberry Pi, Python, and building circuits. I was also able to improve my ability to communicate with others. In the end, my project is able to track a ball using image processing and is able to move towards it using motors and ultrasonic sensors. In the future after BlueStamp, I hope to make more modifications to this project such as adding an API and to make more robots similar to this one.  
 
 # Second Milestone
