@@ -216,6 +216,6 @@ picam2.stop_recording()
 | Arducam(Replacement) | When connected to the Raspberry Pi, it is able to take photos and videos | $6.99 | <a href="https://www.amazon.com/Arducam-Megapixels-Sensor-OV5647-Raspberry/dp/B012V1HEP4/ref=asc_df_B012V1HEP4/?tag=hyprod-20&linkCode=df0&hvadid=693620629591&hvpos=&hvnetw=g&hvrand=7199533373023029001&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9028763&hvtargid=pla-820020083673&mcid=75fa5b0480f739c29fa68a28d965eee9&gad_source=1&th=1"> Link </a> |
 
 # Other Resources/Examples
-- [Example 1](https://projects.raspberrypi.org/en/projects/physical-computing/14 )
-- [Example 2](https://projects.raspberrypi.org/en/projects/physical-computing/12)
-- [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
+- [Motor Wiring](https://projects.raspberrypi.org/en/projects/physical-computing/14 )
+- [Ultrasonic Sensor Wiring](https://projects.raspberrypi.org/en/projects/physical-computing/12)
+- [Image processing](https://docs.opencv.org/4.x/df/d9d/tutorial_py_colorspaces.html)
