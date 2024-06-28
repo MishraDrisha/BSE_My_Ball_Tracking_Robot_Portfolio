@@ -1,40 +1,36 @@
 # Ball Tracking Robot 
  
-The ball tracking robot that I have built uses image processing, which is done by a Pi cam and ultrasonic sensors, to control motors on a robot. The robot is then able to track a ball of a specific color and moves towards it. In the course of completing this project, I was able to overcome many difficult issues such as having to rewire all my ultraasonic sensors and learned important lessons such as the importance of good communication skills.
+The ball tracking robot uses image processing, which is done by a Pi cam and ultrasonic sensors to control motors on a robot. The robot is then able to track a ball of a specific color and moves towards it. In the course of completing this project, I was able to overcome many difficult issues such as having to rewire all my ultraasonic sensors and learned important lessons such as the importance of good communication skills.
  
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Drisha M | STEM High School | Electrical Engineering | Incoming Freshman
 
-<!---**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**--> 
+<!---**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help. 
 
 
-  <!---
 # Final Milestone
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 -->  
-My final milestone was to finish up my project and add in a modification. I put all of my code into one file and added code to allow the robot to move based on where the ball was. For my modification, I added 2 LED lights. The green light turns on when the ball is detected and the red light turns on when the ball is not detected. My two main accomplishments during BlueStamp were understanding new code, and completing the project by myself with minimal help. 2 challenges I faced were meeting deadlines for the project, and making my final file of code work fully. The main things that I learned in the course of making this project are some basics of Raspberry Pi, Python, and building circuits. I was also able to improve my ability to communicate with others. In the end, my project is able to track a ball using image processing and is able to move towards it using motors and ultrasonic sensors. In the future after BlueStamp, I hope to make more modifications to this project and make more robots similar to this one.  
-
+My final milestone was to finish up my project and add in a modification. I put all of my code for my motors, sensors, and camera into one file and added code to allow the robot to move based on where the ball was. For my modification, I added 2 LED lights. The green light turns on when the ball is detected and the red light turns on when the ball is not detected. My two main accomplishments during BlueStamp were understanding new code, and completing the project by myself with minimal help. 2 challenges I faced were meeting deadlines for the project, and making my final file of code work fully. The main things that I learned in the course of making this project are some basics of Raspberry Pi, Python, and building circuits. I was also able to improve my ability to communicate with others. In the end, my project is able to track a ball using image processing and is able to move towards it using motors and ultrasonic sensors. In the future after BlueStamp, I hope to make more modifications to this project such as adding an API and make more robots similar to this one.  
 
 # Second Milestone
 <iframe width="560" height="315" src="https://www.youtube.com/embed/swTvoJJFWII?si=a95VOgHi7y5n98KX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-I have accomplished a lot since my last milestone. My last milestone was getting the robot’s motors to operate properly. Since then, I have also been able to program the ultrasonic sensors to detect how far an object is in front of it. When the project is complete, the sensors will be used to detect how far away the ball is and the motors will move the robot closer to the ball. My second milestone is being able to do image processing on an image taken by the Pi Camera. The main issue I faced during this milestone was because my Pi Camera stopped working. I had to complete all my code without having a camera to test it with immediately. When the new camera came, the code worked properly. This project surprised me because the code is a lot simpler than expected. My next step is to put all my code together, finish up my project, and add in a modification. 
+I have accomplished a lot since my last milestone. My last milestone was getting the robot’s motors to operate properly. Since then, I have also been able to program the ultrasonic sensors to detect how far an object is in front of it. When the project is complete, the sensors will be used to detect how far away the ball is and the motors will move the robot closer to the ball. My second milestone is being able to do image processing on an image taken by the Pi Camera. The main issue I faced during this milestone was because my Pi Camera stopped working. I had to complete all my code without having a camera to test it with immediately. When the new camera came, it was able to turn the background black and turn the ball white. This project surprised me because the code is a lot simpler than expected. My next step is to put code from each of my components together and add in a modification. 
 
 
 # First Milestone
 <iframe width="560" height="315" src="https://www.youtube.com/embed/u2Y0N68iUdk?si=f_fSw-ynnUQXgp3q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-The main parts of my project are the Raspberry Pi, the Pi camera, the motors, and the ultrasonic sensors. All of these components will be connected to the robot car chassis. The Raspberry Pi will be controlling the robot. So far, I have been able to assemble the car chassis, take images and videos from the Pi camera, and run the motors. I faced challenges when connecting the H bridge, the motors, and the Raspberry Pi. I solved this problem by researching on my own and found helpful websites to connect the components. I would like to connect my ultrasonic sensors and do image processing next.  
+The main parts of my project are the Raspberry Pi, the Pi camera, the motors, and the ultrasonic sensors. All of these components will be connected to the robot car chassis. The Raspberry Pi will be controlling the robot. So far, I have been able to assemble the car chassis, take images and videos from the Pi camera, and run the motors. I faced challenges when connecting the H bridge, the motors, and the Raspberry Pi. The H bridge is a small circuit that is used to control the motors. I solved this problem by researching on my own and found helpful websites to connect the components. I would like to connect my ultrasonic sensors and do image processing next.  
 
  
 # Schematics 
 ![Schematics](BlueStampSchematicsFINAL.jpg)
 
 # Code
-Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
-
 ```
 from picamera2.encoders import H264Encoder
 from picamera2 import Picamera2
@@ -219,6 +215,6 @@ picam2.stop_recording()
 <!---
 # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
-- [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
-- [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
+- [Example 1](https://projects.raspberrypi.org/en/projects/physical-computing/14 )
+- [Example 2](https://projects.raspberrypi.org/en/projects/physical-computing/12)
 - [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
