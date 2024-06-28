@@ -1,6 +1,6 @@
 # Ball Tracking Robot 
  
-The ball tracking robot uses image processing, which is done by a Pi cam and ultrasonic sensors to control motors on a robot. The robot is then able to track a ball of a specific color and moves towards it. In the course of completing this project, I was able to overcome many difficult issues such as having to rewire all my ultraasonic sensors and learned important lessons such as the importance of good communication skills.
+The ball tracking robot uses image processing, which is done by a Pi cam and ultrasonic sensors to control motors on a robot. The robot is then able to track a ball of a specific color and moves towards it. In the course of completing this project, I was able to overcome many difficult issues such as having to rewire all my ultrasonic sensors and learned important lessons such as the importance of good communication skills.
  
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
