@@ -218,8 +218,6 @@ picam2.stop_recording()
 | Pi T-Cobbler(Modification) | Allows connection between the breadboard and Raspberry Pi. Results in cleaner and easier to manage wiring | $7.95 | <a href="https://www.amazon.com/Adafruit-2028-Assembled-T-Cobbler-Plus/dp/B00OG4X0DK/ref=sr_1_fkmr0_1?crid=D4E29ACAL53G&dib=eyJ2IjoiMSJ9.rtXqZ75RlcNotNKyBTiETkWNTLrawhtoJT4PBjxXk0Q.cY_30jhShUVgshTU0pk0GBxz4sBP75DXORZGsyZ73Gk&dib_tag=se&keywords=t+pi+cobbler+with+5v+and+3v3&qid=1719442800&sprefix=t+pi+cobbler+with+5v+and+3v3%2Caps%2C102&sr=8-1-fkmr0"> Link </a> | 
 | Arducam(Replacement) | When connected to the Raspberry Pi, it is able to take photos and videos | $6.99 | <a href="https://www.amazon.com/Arducam-Megapixels-Sensor-OV5647-Raspberry/dp/B012V1HEP4/ref=asc_df_B012V1HEP4/?tag=hyprod-20&linkCode=df0&hvadid=693620629591&hvpos=&hvnetw=g&hvrand=7199533373023029001&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9028763&hvtargid=pla-820020083673&mcid=75fa5b0480f739c29fa68a28d965eee9&gad_source=1&th=1"> Link </a> |
 
-https://www.amazon.com/Vemico-Raspberry-Starter-Active-Readers/dp/B0CWL3PY7C?ref_=ast_sto_dp 
-
 # Other Resources/Examples
 - [Motor Wiring](https://projects.raspberrypi.org/en/projects/physical-computing/14 )
 - [Ultrasonic Sensor Wiring](https://projects.raspberrypi.org/en/projects/physical-computing/12)
