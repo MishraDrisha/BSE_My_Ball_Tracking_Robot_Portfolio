@@ -8,6 +8,10 @@ The ball tracking robot uses image processing, which is done by a Pi cam and ult
 
 <!---**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help. 
 --> 
+
+# Final Thoughts and Demo 
+I am happy with the way my project has come out. I was able to complete the base project as well as add some modifications to it. This is my first step to making many more robots like this in the future.This was one of the best ways to spend my summer. As a class, we had so much fun together while also being very productive. Not only have I gained technical skills such as building robots, making circuits, and programming in Python which will help in future careers, but I have also improved my soft skills such as time management, problem solving, teamwork, and decision making. Words cannot express how grateful I am to have found a community of bright minds like this. I will be in contact with them for many years to come. I would like to think that I had entered BlueStamp with a growth mindset. But, after hearing the stories and philosophies of some of our guest speakers, my growth mindset has gotten even stronger and I want to learn and grow even more than I did before.   
+
 # Final Milestone
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HpitgQfbUqg?si=x5LJbQNo_byRSDeX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
